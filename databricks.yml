@@ -2,7 +2,7 @@
 # Used on Day 9. Fill in targets as you progress.
 #
 # Authenticate first:
-#   databricks auth login --host https://${DATABRICKS_HOST} --profile DEV
+#   databricks auth login --host $DATABRICKS_HOST --profile DEV
 #
 # Deploy:
 #   databricks bundle deploy --profile DEV
@@ -26,7 +26,7 @@ targets:
     mode: development
     default: true
     workspace:
-      host: https://${DATABRICKS_HOST}
+      host: ${DATABRICKS_HOST}
       profile: DEV
 
 # Resources defined on Day 9 — left as placeholder until then
