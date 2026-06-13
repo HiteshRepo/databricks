@@ -43,7 +43,7 @@ All profiles show as invalid. Re-authenticate the DEV profile:
 
 ```bash
 databricks auth login \
-  --host https://$DATABRICKS_HOST \
+  --host $DATABRICKS_HOST \
   --profile DEV
 ```
 

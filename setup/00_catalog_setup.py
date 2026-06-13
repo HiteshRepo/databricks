@@ -13,8 +13,11 @@
 # MAGIC %sql
 # MAGIC -- Note: this metastore has no default storage root, so MANAGED LOCATION is required.
 # MAGIC -- Storage root is the workspace Unity Catalog ADLS container.
+# MAGIC -- Replace <CATALOG_STORAGE_ROOT> with your workspace ADLS storage root.
+# MAGIC -- Find it with: databricks catalogs get <existing-catalog> --profile <profile>
+# MAGIC -- and copy the storage_root field.
 # MAGIC CREATE CATALOG IF NOT EXISTS retailflow
-# MAGIC   MANAGED LOCATION '$CATALOG_STORAGE_ROOT'
+# MAGIC   MANAGED LOCATION '<CATALOG_STORAGE_ROOT>'
 # MAGIC   COMMENT 'RetailFlow study project — Databricks DE Professional exam prep';
 
 # COMMAND ----------

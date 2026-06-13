@@ -12,7 +12,7 @@ every topic on the Databricks Certified Data Engineer Professional exam.
 
 ## Workspace
 - Profile: `DEV`
-- Host: `https://$DATABRICKS_HOST`
+- Host: `$DATABRICKS_HOST` (set in `.env`)
 - UC Catalog: `retailflow` (schemas: `raw`, `silver`, `gold`)
 - Landing volume: `/Volumes/retailflow/raw/landing`
 - Checkpoint volume: `/Volumes/retailflow/raw/checkpoints`

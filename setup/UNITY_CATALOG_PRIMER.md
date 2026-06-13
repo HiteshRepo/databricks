@@ -89,7 +89,7 @@ Step 1: Does retailflow.silver have a storage root?
 
 Step 2: Does retailflow (catalog) have a storage root?
         → Yes → use it. Files land at:
-          abfss://...$WORKSPACE_ID/__unitystorage/catalogs/<id>/schemas/<id>/tables/<id>
+          abfss://...<workspace-id>/__unitystorage/catalogs/<id>/schemas/<id>/tables/<id>
 
 Done. Metastore is never checked.
 ```
