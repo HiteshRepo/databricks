@@ -1,0 +1,33 @@
+# Databricks Asset Bundles configuration — RetailFlow project
+# Used on Day 9. Fill in targets as you progress.
+#
+# Authenticate first:
+#   databricks auth login --host https://${DATABRICKS_HOST} --profile DEV
+#
+# Deploy:
+#   databricks bundle deploy --profile DEV
+#
+# Run:
+#   databricks bundle run retailflow_job --profile DEV
+
+bundle:
+  name: retailflow
+
+variables:
+  catalog:
+    default: retailflow
+  landing_path:
+    default: /Volumes/retailflow/raw/landing
+  checkpoint_path:
+    default: /Volumes/retailflow/raw/checkpoints
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://${DATABRICKS_HOST}
+      profile: DEV
+
+# Resources defined on Day 9 — left as placeholder until then
+resources: {}

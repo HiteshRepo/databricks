@@ -1,0 +1,11 @@
+# Generated sample data — regenerate with setup/01_generate_data.py
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# Databricks bundle state
+.databricks/
